@@ -16,7 +16,7 @@ module.exports = {
 
     const embed = new Discord.MessageEmbed()
     .setTitle(`${bot} Help`)
-    .setDescription(` Hello **${message.author.username}**, \n *Choose an category below to see commands* \n\n New to ${bot}? Check out server \n https://discord.gg/haEnY8ZmQ2 \n\n Also Join Our Developer Server \n https://discord.gg/haEnY8ZmQ2`)
+    .setDescription(` Hello **${message.author.username}**, \n *Choose an category below to see commands* \n\n New to ${bot}? Check out server \n ${support} \n\n Also Join Our Developer Server \n https://discord.gg/haEnY8ZmQ2`)
     .setThumbnail(client.user.displayAvatarURL())
     .setColor("RANDOM")
     .setFooter(`Requested by: ${message.author.tag}`)
