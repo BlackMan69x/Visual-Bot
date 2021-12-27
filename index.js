@@ -156,7 +156,10 @@ message.channel.send(`${math.evaluate(`${message.content} + 1`)}`)
 client.on("ready", () => {
    client.user.setStatus("online"); // You can change it to online, dnd, idle
 
- console.log(`Successfully logined as ${client.user.tag} `)
+client.user.setActivity(`Type: ${PREFIX}help - Visual Bot ✨`, { type: "PLAYING"});
+    client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "PLAYING"});
+   
+  }, (5000));
 });
 
 
