@@ -151,21 +151,7 @@ message.channel.send(`${math.evaluate(`${message.content} + 1`)}`)
 
 
 // Do not change anything here
-require('http').createServer((req, res) => res.end(`
- |-----------------------------------------|
- |              Informations               |
- |-----------------------------------------|
- |• Alive: 24/7                            |
- |-----------------------------------------|
- |• Author: Supreme#2401                   |
- |-----------------------------------------|
- |• Server: https://discord.gg/gU7XAxTpX5  |
- |-----------------------------------------|
- |• Github: https://github.com/diwasatreya |
- |-----------------------------------------|
- |• License: Apache License 2.0            |
- |-----------------------------------------|
-`)).listen(3000) //Dont remove this 
+
 
 client.on("ready", () => {
    client.user.setStatus("online"); // You can change it to online, dnd, idle
